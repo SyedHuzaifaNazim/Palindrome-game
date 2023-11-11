@@ -1,0 +1,18 @@
+html{
+    margin: 0;
+    padding: 0%;
+}
+body{
+    background-color: royalblue;
+}
+h2{
+    color: black;
+}
+div.container{
+    text-align: center;
+    background-color: #fff;
+    display: block;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-radius: 100px;
+}
