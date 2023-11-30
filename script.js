@@ -1,3 +1,5 @@
+alert("WELCOME!!!");
+
 function palindrome(){
     var num = document.querySelector(".inputbox").value.toUpperCase();
 //   The code that organises and checks if it is a palindrome
@@ -14,3 +16,26 @@ function palindrome(){
         document.querySelector(".list").innerHTML =`<b>"${num}"</b> is not a palindrome!`
     }
 }
+
+function pasSword(){
+    $('#show_password').on("mousedown", function functionName() {
+        //Change the attribute to text
+        $('#password').attr('type', 'text');
+        $('.glyphicon').removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+    }).on("mouseup", function () {
+        //Change the attribute back to password
+        $('#password').attr('type', 'password');
+        $('.glyphicon').removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
+    }
+    );
+    
+    var isIE = /*@cc_on!@*/false || !!document.documentMode;
+    var isEdge = !isIE && !!window.StyleMedia;
+    var showButton = !(isIE || isEdge)
+    if (!showButton) {
+        document.getElementById("show_password").style.visibility = "hidden";
+    
+
+}
+}
+pasSword(prompt("password: "));
